@@ -28,6 +28,24 @@ const UI = (() => {
       let humidity = result[4];
 
       updateCard(city, description, temp, feels_like, humidity);
+
+      const fetchGif = async () => {
+        const img = document.querySelector('img');
+
+        try {
+          const response = await fetch(
+            `https://api.giphy.com/v1/stickers/translate?api_key=wvYaWc6JzHh8fPYLvchCol3fqBrKOQke&s=${description}`,
+            { mode: 'cors' }
+          );
+          const gifData = await response.json();
+          console.log(gifData);
+          img.src = gifData.data.images.original.url;
+        } catch (error) {
+          console.log(error);
+        }
+      };
+
+      fetchGif();
     } catch (error) {
       console.log(error);
     }
