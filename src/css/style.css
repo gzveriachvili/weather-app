@@ -4,6 +4,71 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: aqua;
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  height: 100vh;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.925),
+      rgba(0, 0, 0, 0.671)
+    ),
+    url(../img/sunny.jpg);
+}
+
+/*-- Search Box --*/
+
+.search-box {
+  height: 60px;
+  background: #f1ae2c;
+  line-height: 40px;
+  padding: 10px;
+  border-radius: 60px;
+}
+.search-input {
+  background: #f1ae2c;
+  color: #141f2b;
+  outline: none;
+  border: none;
+  line-height: 40px;
+  width: 0px;
+  float: left;
+  font-size: 24px;
+  transition: 0.6s ease;
+  font-family: sans-serif;
+}
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: #f1ae2c;
+  padding: 12px;
+  border-radius: 50%;
+  float: right;
+  color: #141f2b;
+  transition: 0.4s ease;
+}
+.search-box:hover > .search-input {
+  width: 240px;
+  margin: 0px 8px;
+}
+.search-input:focus {
+  width: 240px;
+  margin: 0px 8px;
+}
+.search-box:hover > .search-btn {
+  background: #fff;
+}
+.search-input:focus + .search-btn {
+  background: #fff;
+}
+
+/*-- Weather Card --*/
+
+.card {
+  color: #fff;
 }

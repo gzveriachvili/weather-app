@@ -1,9 +1,5 @@
+import 'babel-polyfill';
+import { UI } from './modules/dom';
 import './css/style.css';
 
-const content = document.querySelector('#content');
-
-const para = document.createElement('p');
-
-para.textContent = 'Hello';
-
-content.appendChild(para);
+UI.showWeather();
