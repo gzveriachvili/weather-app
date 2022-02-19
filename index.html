@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/26ce6e3e48.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Weather App</title>
   </head>
   <body>
     <div id="content">
@@ -22,15 +22,32 @@
         <p class="city"></p>
         <p class="description"></p>
         <img src="#" alt="gif here" />
-        <div class="temp-covert">
-          <input type="checkbox" name="" id="" />
+        <div class="temp-convert">
+          <input type="checkbox" id="switch" />Fahrenheit<label for="switch"
+            >Toggle</label
+          >
         </div>
         <div class="weather-data">
-          <p class="temp"></p>
-          <p class="feels-like"></p>
-          <p class="humidity"></p>
+          <table class="center">
+            <tr class="data-titles">
+              <td>Temp</td>
+              <td>Feels</td>
+              <td>Humidty</td>
+            </tr>
+            <tr class="data-items">
+              <td class="temp"></td>
+              <td class="feels-like"></td>
+              <td class="humidity"></td>
+            </tr>
+          </table>
         </div>
       </div>
+      <footer>
+        Made by Gia Zveriachvili
+        <a href="https://github.com/gzveriachvili"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </footer>
     </div>
     <script src="main.js" defer></script>
   </body>
