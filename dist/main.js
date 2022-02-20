@@ -16781,7 +16781,6 @@
     _modules_dom__WEBPACK_IMPORTED_MODULE_1__.UI.showWeather('London', false);
     _modules_dom__WEBPACK_IMPORTED_MODULE_1__.UI.getInput();
     var myInput = document.getElementById('#myInput');
-    myInput.addEventListener('input', function (e) {});
   })();
 
   /******/
