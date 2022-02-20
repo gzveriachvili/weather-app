@@ -2,4 +2,9 @@ import 'babel-polyfill';
 import { UI } from './modules/dom';
 import './css/style.css';
 
-UI.showWeather();
+UI.showWeather('London', false);
+UI.getInput();
+
+const myInput = document.getElementById('#myInput');
+
+myInput.addEventListener('input', (e) => {});
