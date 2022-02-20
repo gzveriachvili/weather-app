@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../src/img/favicon.png"
+      type="image/x-icon"
+    />
     <script
       src="https://kit.fontawesome.com/26ce6e3e48.js"
       crossorigin="anonymous"
@@ -13,7 +18,14 @@
   <body>
     <div id="content">
       <div class="search-box">
-        <input type="text" placeholder="City name..." class="search-input" />
+        <input
+          type="text"
+          placeholder="City name..."
+          class="search-input"
+          id="myInput"
+          required
+          minlength="5"
+        />
         <a href="#" class="search-btn">
           <i class="fas fa-search"></i>
         </a>
@@ -23,9 +35,9 @@
         <p class="description"></p>
         <img src="#" alt="gif here" />
         <div class="temp-convert">
-          <input type="checkbox" id="switch" />Fahrenheit<label for="switch"
-            >Toggle</label
-          >
+          <span id="unitText">Celsius (&#8451;)</span>
+          <input type="checkbox" id="switch" />
+          <label for="switch"> </label>
         </div>
         <div class="weather-data">
           <table class="center">
@@ -44,9 +56,9 @@
       </div>
       <footer>
         Made by Gia Zveriachvili
-        <a href="https://github.com/gzveriachvili"
-          ><i class="fa-brands fa-github"></i
-        ></a>
+        <a href="https://github.com/gzveriachvili" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
       </footer>
     </div>
     <script src="main.js" defer></script>
