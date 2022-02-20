@@ -6,5 +6,3 @@ UI.showWeather('London', false);
 UI.getInput();
 
 const myInput = document.getElementById('#myInput');
-
-myInput.addEventListener('input', (e) => {});
