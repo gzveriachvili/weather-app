@@ -3,7 +3,7 @@ import 'babel-polyfill';
 const getCoord = async (city) => {
   try {
     const response = await fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=3ae1f5489c4b254024290096c8c86585`,
+      `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=3ae1f5489c4b254024290096c8c86585`,
       { mode: 'cors' }
     );
     const coordData = await response.json();
