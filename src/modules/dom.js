@@ -75,7 +75,6 @@ const UI = (() => {
       fetchGif();
     } catch (error) {
       console.log(error);
-      //alert('cant find place');
     }
   };
 
